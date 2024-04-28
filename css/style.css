@@ -64,6 +64,9 @@ li.nav-item:hover{
 .link-text2:hover{
     color: #515151;
 }
+.logout-text{
+    font-size: 0.8rem;
+}
 
 /* NAVBAR */
 .nav-logo{
