@@ -15,7 +15,6 @@ body {
     /* overflow-y: auto; */
     z-index: 1000; /* Ensure it's above other content */
 }
-
 .account-icon2 {
     cursor: pointer;
     transition: none !important;
@@ -122,6 +121,7 @@ li.nav-item:hover{
 }
 .dropdown-menu{
     --bs-dropdown-link-active-bg: #0d6efd;
+    font-size: 0.8rem;
 }
 .navbar-nav{
     --bs-nav-link-hover-color: rgb(255 255 255);
