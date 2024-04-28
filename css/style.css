@@ -109,7 +109,7 @@ li.nav-item:hover{
     height: 1.5em;
     vertical-align: middle;
     /* background-image: var(--bs-navbar-toggler-icon-bg); */
-    background-image:url(/icons/hamburger-menu-light.png);
+    background-image:url(icons/hamburger-menu-light.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 130%;
