@@ -1,0 +1,219 @@
+html{
+    height: 100%;
+    font-family: 'Poppins';
+}
+body {
+    height: 100%;
+    font-family: 'Poppins';
+}
+ /* SIDEBAR */
+ .fixed-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* overflow-y: auto; */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.account-icon2 {
+    cursor: pointer;
+    transition: none !important;
+}
+
+.mynav{
+    color: #222;
+}
+
+.mynav li a {
+    color:  #222;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    padding: 8px 5px;
+}
+
+.mynav li a.active{
+    background: rgba(255,255,255,0.2);
+}
+
+.nav-link{
+    margin-left: 2rem;
+}
+
+li.nav-item:hover{
+    background: rgb(233, 233, 233);
+}
+
+.mynav li a i{
+    width: 25px;
+    text-align: center;
+}
+
+.link-text{
+    font-family: 'Poppins';
+    font-size: 0.8rem;
+}
+.link-text2{
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #222;
+}
+.link-text2:hover{
+    color: #515151;
+}
+
+/* NAVBAR */
+.nav-logo{
+    width: 2.5rem;
+}
+.offcanvas-logo{
+    width: 4rem;
+}
+.offcanvas-title{
+    font-family: 'Poppins600';
+}
+.account-icon{
+    cursor: pointer;
+}
+.account-icon2{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+/* .account-icon2:hover{
+    transform: scale(1.1);
+} */
+.btn-dropdown {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    padding: 0;
+}
+.btn-dropdown:hover,
+.btn-dropdown:focus {
+    background-color: transparent;
+    box-shadow: none;
+    color: inherit;
+}
+.dropdown-item{
+    transition: 0;
+}
+.dropdown-item:hover{
+    background-color: rgb(233, 233, 233);
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    /* background-image: var(--bs-navbar-toggler-icon-bg); */
+    background-image:url(/icons/hamburger-menu-light.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 130%;
+}
+.btn-close-white {
+    filter: none;
+}
+.dropdown-menu{
+    --bs-dropdown-link-active-bg: #0d6efd;
+}
+.navbar-nav{
+    --bs-nav-link-hover-color: rgb(255 255 255);
+}
+.link-icons{
+    width: 1.2rem;
+}
+.offcanvas-body {
+    flex-grow: 1;
+    padding: 0;
+    overflow-y: auto;
+}
+
+
+/* TEXT */
+@media (max-width: 768px) {
+    .text-resize {
+        font-size: 1rem;
+    }
+    .account-button {
+        font-size: 1rem;
+    }
+    
+}
+@media (max-width: 576px) {
+    .text-resize {
+        font-size: 0.9rem;
+    }
+    .account-button {
+        font-size: 0.9rem;
+    }
+}
+
+.sidebar-navigation{
+    color: rgb(120, 120, 120);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9rem;
+}
+a.nav-link{
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+}
+a.nav-link:hover{
+    color: black;
+}
+.navbar-large{
+    background-color: white;
+}
+
+/* LOGIN-USER FORM */
+.form-control{
+    font-size: 0.8rem;
+}
+
+
+/* DASHBOARD */
+
+.card-subtitle{
+    font-size: small;
+    font-weight: 500;
+    color: rgb(92, 92, 92);
+}
+
+@media (max-width: 992px) {
+    .flex-fill {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .flex-fill {
+        padding-left: 250px;
+    }
+}
+
+
+/* EVENTS */
+.c-item{
+    height: 300px;
+}
+.carousel-pictures{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(0.8);
+    filter: blur(0.5px);
+}
+.upcoming-events-pictures{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.page-link {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+.page-item {
+    margin-right: 0px; /* Adjust the spacing between pagination items */
+}

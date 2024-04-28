@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Poppins200';
+    src: url(/VScode/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'Poppins300';
+    src: url(/VScode/fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: 'Poppins400';
+    src: url(/VScode/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins500';
+    src: url(/VScode/fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poppins600';
+    src: url(/VScode/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Poppins800';
+    src: url(/VScode/fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Cerebri-Sans-Book';
+    src: url(/VScode/fonts/Cerebri-Sans/Cerebri\ Sans\ Book.ttf);
+}
