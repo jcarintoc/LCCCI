@@ -7,23 +7,21 @@ body {
     font-family: 'Poppins';
 }
  /* SIDEBAR */
- .fixed-sidebar {
+.fixed-sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     /* overflow-y: auto; */
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000;
 }
 .account-icon2 {
     cursor: pointer;
     transition: none !important;
 }
-
 .mynav{
     color: #222;
 }
-
 .mynav li a {
     color:  #222;
     text-decoration: none;
@@ -32,24 +30,19 @@ body {
     border-radius: 5px;
     padding: 8px 5px;
 }
-
 .mynav li a.active{
     background: rgba(255,255,255,0.2);
 }
-
 .nav-link{
     margin-left: 2rem;
 }
-
 li.nav-item:hover{
     background: rgb(233, 233, 233);
 }
-
 .mynav li a i{
     width: 25px;
     text-align: center;
 }
-
 .link-text{
     font-family: 'Poppins';
     font-size: 0.8rem;
@@ -219,4 +212,13 @@ a.nav-link:hover{
 }
 .page-item {
     margin-right: 0px; /* Adjust the spacing between pagination items */
+}
+
+/* ANNOUNCEMENT */
+.monthAnn, .timeAnn, .titleAnn, .descAnn {
+    font-size: small;
+}
+.announcementDate{
+    text-align: center;
+    width: 130px;
 }
