@@ -254,6 +254,15 @@ a.nav-link:hover{
     .recruitmentPic:hover{
         transform: scale(1.05);
     }
+    .recruitmentForm{
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    
 }
 
 .form-label{
