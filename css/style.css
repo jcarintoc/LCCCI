@@ -190,7 +190,6 @@ a.nav-link:hover{
     }
 }
 
-
 /* EVENTS */
 .c-item{
     height: 300px;
@@ -221,4 +220,47 @@ a.nav-link:hover{
 .announcementDate{
     text-align: center;
     width: 130px;
+}
+
+/* RECRUITMENT */
+.image-gallery {
+    max-height: 85vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.recruitmentPic{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.25s;
+    aspect-ratio: 16/9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.recruitmentPic:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .image-gallery {
+        max-width: 100%px;
+        overflow-y: hidden;
+        overflow-x: auto;
+        display: flex;
+    }
+    .recruitmentPic {
+        width: 75%;
+        padding: 10px;
+        aspect-ratio: 4/3;
+    }
+    .recruitmentPic:hover{
+        transform: scale(1.05);
+    }
+}
+
+.form-label{
+    font-size: smaller;
+}
+.recruitmentForm{
+    padding: 3.5rem 2.5rem;
 }
