@@ -234,8 +234,6 @@ a.nav-link:hover{
     object-fit: cover;
     transition: 0.25s;
     aspect-ratio: 16/9;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 .recruitmentPic:hover{
     transform: scale(1.05);
@@ -243,7 +241,7 @@ a.nav-link:hover{
 
 @media (max-width: 768px) {
     .image-gallery {
-        max-width: 100%px;
+        max-width: 100%;
         overflow-y: hidden;
         overflow-x: auto;
         display: flex;
