@@ -33,9 +33,6 @@ body {
 .mynav li a.active{
     background: rgba(255,255,255,0.2);
 }
-.nav-link{
-    margin-left: 2rem;
-}
 li.nav-item:hover{
     background: rgb(233, 233, 233);
 }
@@ -261,13 +258,39 @@ a.nav-link:hover{
     }
 }
 
-@media (min-width: 768px) {
-    
-}
-
 .form-label{
     font-size: smaller;
 }
 .recruitmentForm{
     padding: 3.5rem 2.5rem;
+}
+
+/* SERMON */
+.sermonIcon{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+}
+.sermonTitle{
+    font-weight: 600;
+    margin: 0;
+}
+.sermonDescription{
+    font-size: small;
+    margin: 0;
+}
+.sermonButton{
+    transition: 0.25s;
+}
+.sermonButton:hover{
+    opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+    .sermonIcon{
+        width: 60px;
+        height: 60px;
+    }
 }
