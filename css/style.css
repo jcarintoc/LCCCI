@@ -293,3 +293,9 @@ a.nav-link:hover{
         height: 60px;
     }
 }
+
+/* MY ACCOUNT */
+.avatar{
+    object-fit: cover;
+    border: solid 3px #d1d1d1;
+}
