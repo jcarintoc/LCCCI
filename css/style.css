@@ -199,8 +199,11 @@ a.nav-link:hover{
 }
 .upcoming-events-pictures{
     object-fit: cover;
-    height: 100%;
+    height: 180px;
     width: 100%;
+    border-radius: 3px;
+    padding: 0.8rem 0.8rem;
+
 }
 .page-link {
     font-size: 12px; /* Adjust the font size as needed */
