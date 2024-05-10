@@ -55,7 +55,7 @@
             <img class="link-icons me-2" src="icons/media-icon.png" alt="">
             <span class="link-text">Media</span>
           </a>
-          <ul class="dropdown-menu ms-2 text-center" style="width: 94%;" aria-labelledby="mediaDropdown">
+          <ul class="dropdown-menu ms-2 text-center rounded-0" style="width: 94%;" aria-labelledby="mediaDropdown">
 						<li><a class="dropdown-item" href="sermons.html">Sermons</a></li>
 						<li><a class="dropdown-item" href="worship.html">Worship</a></li>
 					</ul>
@@ -141,9 +141,9 @@
                     <img class="link-icons me-2" src="icons/media-icon.png" alt="">
                     <span class="link-text">Media</span>
                   </a>
-                  <ul class="dropdown-menu m-2" aria-labelledby="mediaDropdown">
-                    <li><a class="dropdown-item ps-3" href="sermons.html">Sermons</a></li>
-                    <li><a class="dropdown-item ps-3" href="worship.html">Worship</a></li>
+                  <ul class="dropdown-menu m-2 rounded-0" aria-labelledby="mediaDropdown">
+                    <li><a class="dropdown-item ps-3 py-2" href="sermons.html">Sermons</a></li>
+										<li><a class="dropdown-item ps-3 py-2" href="worship.html">Worship</a></li>
                   </ul>
                 </li>
                 <li class="nav-item mb-1">
@@ -201,35 +201,24 @@
         <div class="container-fluid">
           <!-- FIRST 1ST CAROUSEL -->
           <div class="row">
-            <div class="col-12 gx-0 mt-1 shadow">
-              <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
+            <div class="col-12 gx-0 mt-1">
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" data-bs-interval="3000">
                   <div class="carousel-item active">
                     <img class="carousel-pictures" src="pictures/example picture7.webp" class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-bs-interval="3000">
                     <img class="carousel-pictures" src="pictures/example picture7.jpeg" class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item">
-                    <img class="carousel-pictures" src="pictures/example picture11.webp" class="d-block w-100"
-                      alt="...">
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img class="carousel-pictures" src="pictures/example picture11.webp" class="d-block w-100" alt="...">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
@@ -253,7 +242,7 @@
 
                 <div class="card-body p-0" style="max-height: 100%;">
                   <!-- First Card of UPCOMING EVENTS -->
-                  <div class="bg-white card mb-3 mt-3 border-1" style="max-width: 100%;">
+                  <div class="bg-light card mb-3 mt-3 border-0 shadow-sm" style="max-width: 100%;">
                     <div class="row g-0">
                       <div class="col-12 col-sm-5">
                         <img class="upcoming-events-pictures" src="pictures/example picture4.jpeg"
@@ -270,7 +259,7 @@
                   </div>
 
                   <!-- Second Card of UPCOMING EVENTS -->
-                  <div class="bg-white card mb-3 border-1" style="max-width: 100%;">
+                  <div class="bg-light card mb-3 border-0 shadow-sm" style="max-width: 100%;">
                     <div class="row g-0">
                       <div class="col-12 col-sm-5">
                         <img class="upcoming-events-pictures" src="pictures/example picture5.png"
@@ -287,7 +276,7 @@
                   </div>
 
                   <!-- Third Card of UPCOMING EVENTS -->
-                  <div class="bg-white card mb-3 border-1" style="max-width: 100%;">
+                  <div class="bg-light card mb-3 border-0 shadow-sm" style="max-width: 100%;">
                     <div class="row g-0">
                       <div class="col-12 col-sm-5">
                         <img class="upcoming-events-pictures" src="pictures/example picture6.jpeg"
