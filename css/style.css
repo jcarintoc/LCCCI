@@ -16,6 +16,9 @@
     --input-color: #e9e9e9;
     --tablehead-color: #51575c;
 }
+.sidebar-border{
+    border-right: 1px solid var(--hover-color);
+}
 #icon{
     width: 30px;
     cursor: pointer;
@@ -74,7 +77,6 @@ body {
     text-decoration: none;
     width: 100%;
     display: block;
-    
     padding: 8px 5px;
 }
 .mynav li a.active{
