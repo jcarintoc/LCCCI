@@ -26,6 +26,9 @@
 .inverted{
     filter: invert(1);
 }
+.divider{
+    color: var(--third-color);
+}
 /* .form-control::placeholder {
     color: var(--third-color);
 } */
