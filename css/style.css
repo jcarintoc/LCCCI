@@ -20,7 +20,7 @@
     border-right: 1px solid var(--hover-color);
 }
 #icon{
-    width: 30px;
+    width: 50px;
     cursor: pointer;
 }
 .inverted{
