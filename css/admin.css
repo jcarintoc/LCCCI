@@ -6,6 +6,21 @@ body {
   height: 100%;
   font-family: 'Poppins';
 }
+/* FLOATING BUTTON FOR DARK MODE */
+.fixed-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00334bc5;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 999; /* Ensures the button stays on top of other content */
+}
+
+
 /* SIDEBAR */
 .fixed-sidebar {
   position: fixed;
