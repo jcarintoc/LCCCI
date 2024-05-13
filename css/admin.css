@@ -208,12 +208,19 @@ a.nav-link:hover{
   font-size: smaller;
   padding: 0.3rem 0.9rem;
 }
-@media (max-width: 380px) {
+@media (max-width: 541px) {
   .table button {
     margin: 3px 0;
   }
 }
-
+.table img{
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
+.table-image{
+  width: 100px;
+}
 
 /* EVENTS */
 .c-item{
