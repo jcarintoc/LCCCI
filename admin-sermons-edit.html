@@ -250,8 +250,8 @@
 					<div class="col-12" style="padding-top: 12px;">
 						<div class="card" style="background-color: #00334b;">
 							<div class="card-body d-flex justify-content-between align-items-center">
-								<h6 class="m-0 text-light">Announcements</h6>
-								<p class="ms-3 m-0 text-light" style="font-size: small;"> Announcements > Announcement Lists > Edit Announcement </p>
+								<h6 class="m-0 text-light">Sermons</h6>
+								<p class="ms-3 m-0 text-light" style="font-size: small;"> Sermons > Sermon Lists > Edit Sermon </p>
 							</div>
 						</div>
 					</div>
@@ -264,21 +264,29 @@
 						<div class="col-12">
 							<div class="card rounded-0 border-0 shadow-sm">
 								<div class="card bg-transparent p-3 border-top-0 border-start-0 border-end-0 rounded-0">
-									<h6 class="m-0">Edit Announcement</h6>
+									<h6 class="m-0">Edit Sermon</h6>
 								</div>
 								<div class="card-body">
-									<form id="announcementForm">
+									<form id="sermonForm">
 										<div class="mb-3">
-											<label for="announcementTitle" class="form-label">Edit Announcement Title</label>
-											<input type="text" class="form-control rounded-0" id="announcementTitle" required>
+											<label for="sermonTitle" class="form-label">Edit Sermon Title</label>
+											<input type="text" class="form-control rounded-0" id="sermonTitle" required>
 										</div>
 										<div class="mb-3">
-											<label for="announcementShortDescription" class="form-label">Edit Short Description</label>
-											<input type="text" class="form-control rounded-0" id="announcementShortDescription" required>
+											<label for="sermonShortDescription" class="form-label">Edit Short Description</label>
+											<input type="text" class="form-control rounded-0" id="sermonShortDescription" required>
 										</div>
 										<div class="mb-3">
 											<label for="announcementContent" class="form-label">Edit Content</label>
 											<textarea id="announcementContent" name="announcementContent"></textarea>
+										</div>
+										<div class="mb-3">
+											<label for="formFile" class="form-label">Change image for sermon</label>
+											<input class="form-control rounded-0" type="file" id="formFile">
+										</div>
+										<div class="mb-3">
+											<label for="formFile" class="form-label">Change file for sermon video</label>
+											<input class="form-control rounded-0" type="file" id="formFile">
 										</div>
 										<button type="submit" class="btn btn-sm btn-primary">Update</button>
 									</form>

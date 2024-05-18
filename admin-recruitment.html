@@ -244,14 +244,14 @@
 			</nav>
 			<!-- END OF NAVBAR -->
 
-			<!-- START OF EDIT ANNOUNCEMENT -->
+			<!-- START OF ADD RECRUITMENT -->
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12" style="padding-top: 12px;">
 						<div class="card" style="background-color: #00334b;">
 							<div class="card-body d-flex justify-content-between align-items-center">
-								<h6 class="m-0 text-light">Announcements</h6>
-								<p class="ms-3 m-0 text-light" style="font-size: small;"> Announcements > Announcement Lists > Edit Announcement </p>
+								<h6 class="m-0 text-light">Recruitment</h6>
+								<p class="ms-3 m-0 text-light" style="font-size: small;"> Recruitment > Recruitment Lists </p>
 							</div>
 						</div>
 					</div>
@@ -262,33 +262,87 @@
 				<div class="container-fluid p-0">
 					<div class="row">
 						<div class="col-12">
-							<div class="card rounded-0 border-0 shadow-sm">
+							<div class="card border-0 rounded-0 shadow-sm">
 								<div class="card bg-transparent p-3 border-top-0 border-start-0 border-end-0 rounded-0">
-									<h6 class="m-0">Edit Announcement</h6>
+									<h6 class="m-0">Recruitment Lists</h6>
 								</div>
-								<div class="card-body">
-									<form id="announcementForm">
-										<div class="mb-3">
-											<label for="announcementTitle" class="form-label">Edit Announcement Title</label>
-											<input type="text" class="form-control rounded-0" id="announcementTitle" required>
+								<div class="card-body p-3">
+									
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th>Full Name</th>
+													<th>Email</th>
+													<th>Contact</th>
+													<th>Age</th>
+													<th>Gender</th>
+													<th>Position</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Person 1</td>
+													<td>Email1@gmail.com</td>
+													<td>09123456789</td>
+													<td>17</td>
+													<td>Male</td>
+													<td>Pos1</td>
+												</tr>
+												<tr>
+													<td>Person 2</td>
+													<td>Email2@gmail.com</td>
+													<td>09223456789</td>
+													<td>18</td>
+													<td>Male</td>
+													<td>Pos2</td>
+												</tr>
+												<tr>
+													<td>Person 3</td>
+													<td>Email3@gmail.com</td>
+													<td>09323456789</td>
+													<td>22</td>
+													<td>Female</td>
+													<td>Pos3</td>
+												</tr>
+												<tr>
+													<td>Person 4</td>
+													<td>Email4@gmail.com</td>
+													<td>09423456789</td>
+													<td>19</td>
+													<td>Female</td>
+													<td>Pos4</td>
+												</tr>
+												<tr>
+													<td>Person 5</td>
+													<td>Email5@gmail.com</td>
+													<td>09523456789</td>
+													<td>16</td>
+													<td>Male</td>
+													<td>Pos5</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<div class="d-flex justify-content-center">
+											<nav aria-label="Page navigation example">
+												<ul class="pagination">
+													<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+													<li class="page-item"><a class="page-link" href="#">1</a></li>
+													<li class="page-item"><a class="page-link" href="#">2</a></li>
+													<li class="page-item"><a class="page-link" href="#">3</a></li>
+													<li class="page-item"><a class="page-link" href="#">Next</a></li>
+												</ul>
+											</nav>
 										</div>
-										<div class="mb-3">
-											<label for="announcementShortDescription" class="form-label">Edit Short Description</label>
-											<input type="text" class="form-control rounded-0" id="announcementShortDescription" required>
-										</div>
-										<div class="mb-3">
-											<label for="announcementContent" class="form-label">Edit Content</label>
-											<textarea id="announcementContent" name="announcementContent"></textarea>
-										</div>
-										<button type="submit" class="btn btn-sm btn-primary">Update</button>
-									</form>
+									
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- END OF EDIT ANNOUNCEMENT  -->
+
+			<!-- END OF ADD RECRUITMENT  -->
 
 
 
@@ -302,8 +356,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
 		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
 		crossorigin="anonymous"></script>
-		<script src="https://cdn.tiny.cloud/1/<YOUR_API_KEY>/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-		<script src="javascript/textEditor.js"></script>
 	<!-- <script src="/bootstrap-5.3.3-dist/js/bootstrap.js"></script> -->
 </body>
 
