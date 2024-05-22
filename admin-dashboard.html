@@ -109,11 +109,16 @@
 						<li><a class="dropdown-item text-dark ps-3" href="admin-visitor-lists.html">Visitor Lists</a></li>
 					</ul>
 				</li>
-				<li class="nav-item mb-1">
-					<a href="" class="nav-link ps-5">
+				<li class="nav-item mb-1 dropdown">
+					<a href="#" class="nav-link ps-5 dropdown-toggle" role="button" id="mediaDropdown" data-bs-toggle="dropdown"
+						aria-expanded="false">
 						<img class="link-icons me-2" src="icons/admin-donation-icon.png" alt="">
 						<span class="link-text">Give</span>
 					</a>
+					<ul class="dropdown-menu ms-2 border-0 rounded-0" style="width: 94%;" aria-labelledby="mediaDropdown">
+						<li><a class="dropdown-item text-dark ps-3" href="admin-give-add.html">Add Donation</a></li>
+						<li><a class="dropdown-item text-dark ps-3" href="admin-give-lists.html">Donation Lists</a></li>
+					</ul>
 				</li>
 			</ul>
 			<hr style="color: #fff; border-width: 2px;">
@@ -232,11 +237,16 @@
 										<li><a class="dropdown-item text-dark ps-3 py-2" href="admin-sermons-lists.html">Visitor Lists</a></li>
 									</ul>
 								</li>
-								<li class="nav-item mb-1 px-3">
-									<a href="admin-give.html" class="nav-link ps-5">
+								<li class="nav-item mb-1 dropdown px-3">
+									<a href="#" class="nav-link ps-5 dropdown-toggle" role="button" id="mediaDropdown" data-bs-toggle="dropdown"
+										aria-expanded="false">
 										<img class="link-icons me-2" src="icons/admin-donation-icon.png" alt="">
 										<span class="link-text">Give</span>
 									</a>
+									<ul class="dropdown-menu mb-3 border-0 rounded-0" aria-labelledby="mediaDropdown">
+										<li><a class="dropdown-item text-dark ps-3 py-2" href="admin-give-add.html">Add Donation</a></li>
+										<li><a class="dropdown-item text-dark ps-3 py-2" href="admin-give-lists.html">Donation Lists</a></li>
+									</ul>
 								</li>
 							</ul>
 						</div>
@@ -298,7 +308,7 @@
 					</div>
 					<!-- 2nd ROW -->
 					<div class="row gx-2">
-						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-4 col-md-12 col-sm-6 col-xs-12">
 							<div class="card mb-2 d-flex flex-row align-items-center shadow-sm border-0" style="max-width: 100%;">
 								<div class="d-flex justify-content-start align-items-center p-3">
 									<div class="card bg-secondary-subtle p-2 rounded-5 border-0">
@@ -326,6 +336,22 @@
 							</div>
 						</div>
 
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+							<div class="card mb-2 d-flex flex-row align-items-center shadow-sm border-0" style="max-width: 100%;">
+								<div class="d-flex justify-content-start align-items-center p-3">
+									<div class="card bg-secondary-subtle p-2 rounded-5 border-0">
+										<img src="icons/dashboard-member-icon.png" style="max-width: 25px;" alt="">
+									</div>
+									<div class="ms-3">
+										<p class="card-subtitle">Members</p>
+										<h4 class="m-0">200</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 3nd ROW -->
+					<div class="row gx-2">
 						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 							<div class="card mb-2 d-flex flex-row align-items-center shadow-sm border-0" style="max-width: 100%;">
 								<div class="d-flex justify-content-start align-items-center p-3">
@@ -339,10 +365,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- 3nd ROW -->
-					<div class="row gx-2">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 							<div class="card mb-2 d-flex flex-row align-items-center shadow-sm border-0" style="max-width: 100%;">
 								<div class="d-flex justify-content-start align-items-center p-3">
 									<div class="card bg-secondary-subtle p-2 rounded-5 border-0">
@@ -356,7 +379,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 							<div class="card mb-2 d-flex flex-row align-items-center shadow-sm border-0" style="max-width: 100%;">
 								<div class="d-flex justify-content-start align-items-center p-3">
 									<div class="card bg-secondary-subtle p-2 rounded-5 border-0">

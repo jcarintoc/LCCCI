@@ -109,11 +109,16 @@
 						<li><a class="dropdown-item text-dark ps-3" href="admin-visitor-lists.html">Visitor Lists</a></li>
 					</ul>
 				</li>
-				<li class="nav-item mb-1">
-					<a href="" class="nav-link ps-5">
+				<li class="nav-item mb-1 dropdown">
+					<a href="#" class="nav-link ps-5 dropdown-toggle" role="button" id="mediaDropdown" data-bs-toggle="dropdown"
+						aria-expanded="false">
 						<img class="link-icons me-2" src="icons/admin-donation-icon.png" alt="">
 						<span class="link-text">Give</span>
 					</a>
+					<ul class="dropdown-menu ms-2 border-0 rounded-0" style="width: 94%;" aria-labelledby="mediaDropdown">
+						<li><a class="dropdown-item text-dark ps-3" href="admin-give-add.html">Add Donation</a></li>
+						<li><a class="dropdown-item text-dark ps-3" href="admin-give-lists.html">Donation Lists</a></li>
+					</ul>
 				</li>
 			</ul>
 			<hr style="color: #fff; border-width: 2px;">
@@ -232,11 +237,16 @@
 										<li><a class="dropdown-item text-dark ps-3 py-2" href="admin-sermons-lists.html">Visitor Lists</a></li>
 									</ul>
 								</li>
-								<li class="nav-item mb-1 px-3">
-									<a href="admin-give.html" class="nav-link ps-5">
+								<li class="nav-item mb-1 dropdown px-3">
+									<a href="#" class="nav-link ps-5 dropdown-toggle" role="button" id="mediaDropdown" data-bs-toggle="dropdown"
+										aria-expanded="false">
 										<img class="link-icons me-2" src="icons/admin-donation-icon.png" alt="">
 										<span class="link-text">Give</span>
 									</a>
+									<ul class="dropdown-menu mb-3 border-0 rounded-0" aria-labelledby="mediaDropdown">
+										<li><a class="dropdown-item text-dark ps-3 py-2" href="admin-give-add.html">Add Donation</a></li>
+										<li><a class="dropdown-item text-dark ps-3 py-2" href="admin-give-lists.html">Donation Lists</a></li>
+									</ul>
 								</li>
 							</ul>
 						</div>
@@ -277,7 +287,7 @@
 
 					<div class="row d-flex justify-content-center">
 						<div class="col-11 col-md-10 card p-3 border-0 shadow-sm">
-							<div class="card-body">
+							<div class="card-body p-4">
 								<!-- FIRST ROW -->
 								<div class="row">
 									<div class="col-12 col-md-6">
