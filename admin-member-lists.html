@@ -335,7 +335,7 @@
 												<td>Palingon</td>
 												<td>09567745342</td>
 												<td>
-													<button class="btn btn-sm btn-secondary">View</button>
+													<button class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
 													<a href="admin-member-edit.html"><button class="btn btn-sm btn-primary">Edit</button></a>
 													<button class="btn btn-sm btn-danger" data-bs-toggle="modal"
 													data-bs-target="#DeleteModal">Delete</button>
@@ -347,7 +347,7 @@
 												<td>Lingga</td>
 												<td>09123323427</td>
 												<td>
-													<button class="btn btn-sm btn-secondary">View</button>
+													<button class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
 													<a href="admin-member-edit.html"><button class="btn btn-sm btn-primary">Edit</button></a>
 													<button class="btn btn-sm btn-danger" data-bs-toggle="modal"
 													data-bs-target="#DeleteModal">Delete</button>
@@ -359,7 +359,7 @@
 												<td>Sampiruhan</td>
 												<td>09872251443</td>
 												<td>
-													<button class="btn btn-sm btn-secondary">View</button>
+													<button class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
 													<a href="admin-member-edit.html"><button class="btn btn-sm btn-primary">Edit</button></a>
 													<button class="btn btn-sm btn-danger" data-bs-toggle="modal"
 													data-bs-target="#DeleteModal">Delete</button>
@@ -371,7 +371,7 @@
 												<td>San Jose</td>
 												<td>09998256435</td>
 												<td>
-													<button class="btn btn-sm btn-secondary">View</button>
+													<button class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
 													<a href="admin-member-edit.html"><button class="btn btn-sm btn-primary">Edit</button></a>
 													<button class="btn btn-sm btn-danger" data-bs-toggle="modal"
 													data-bs-target="#DeleteModal">Delete</button>
@@ -383,7 +383,7 @@
 												<td>San Juan</td>
 												<td>09887889864</td>
 												<td>
-													<button class="btn btn-sm btn-secondary">View</button>
+													<button class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
 													<a href="admin-member-edit.html"><button class="btn btn-sm btn-primary">Edit</button></a>
 													<button class="btn btn-sm btn-danger" data-bs-toggle="modal"
 													data-bs-target="#DeleteModal">Delete</button>
@@ -395,7 +395,7 @@
 												<td>Barangay 7</td>
 												<td>09876466523</td>
 												<td>
-													<button class="btn btn-sm btn-secondary">View</button>
+													<button class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
 													<a href="admin-member-edit.html"><button class="btn btn-sm btn-primary">Edit</button></a>
 													<button class="btn btn-sm btn-danger" data-bs-toggle="modal"
 													data-bs-target="#DeleteModal">Delete</button>
@@ -407,7 +407,7 @@
 												<td>Looc</td>
 												<td>09827318541</td>
 												<td>
-													<button class="btn btn-sm btn-secondary">View</button>
+													<button class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
 													<a href="admin-member-edit.html"><button class="btn btn-sm btn-primary">Edit</button></a>
 													<button class="btn btn-sm btn-danger" data-bs-toggle="modal"
 													data-bs-target="#DeleteModal">Delete</button>
@@ -419,7 +419,7 @@
 												<td>Del Pilar</td>
 												<td>09347283741</td>
 												<td>
-													<button class="btn btn-sm btn-secondary">View</button>
+													<button class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
 													<a href="admin-member-edit.html"><button class="btn btn-sm btn-primary">Edit</button></a>
 													<button class="btn btn-sm btn-danger" data-bs-toggle="modal"
 													data-bs-target="#DeleteModal">Delete</button>
@@ -450,6 +450,34 @@
 
 		</div>
 	</div>
+
+	<!-- MODAL FOR VIEW BUTTON -->
+	<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Member Information</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <br><br><br><br><br><br>
+				<br><br><br><br><br><br>
+				<br><br><br><br><br><br>
+				<br><br><br><br>
+      </div>
+      <div class="modal-footer">
+				<button type="button" class="btn btn-primary px-3">Print</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	
 
 	<!-- MODAL FOR DELETE BUTTON -->
 	<div class="modal fade" id="DeleteModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
