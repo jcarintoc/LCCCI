@@ -6,6 +6,7 @@
     --hover-color: #e9e9e9;
     --input-color: #ffffff;
     --tablehead-color: #f2f2f2;
+    --dark-gray: rgb(119, 119, 119);
 }
 .dark-theme{
     --primary-color: #36414A;
@@ -15,6 +16,7 @@
     --hover-color: #333A40;
     --input-color: #d7d7d7;
     --tablehead-color: #51575c;
+    --dark-gray: rgb(185, 185, 185);
 }
 .sidebar-border{
     border-right: 1px solid var(--hover-color);
@@ -63,6 +65,9 @@
     cursor: pointer;
     z-index: 999; /* Ensures the button stays on top of other content */
   }
+.fixed-btn-toggle {
+    background-color: #f3f3f3 ;
+}
 
 html{
     height: 100%;
@@ -312,6 +317,18 @@ a.nav-link:hover{
 }
 
 /* ANNOUNCEMENT */
+.latest-announcement-title {
+    font-size: large;
+    font-weight: bold;
+}
+.latest-announcement-body {
+    font-size: small;
+}
+.latest-announcement-dateAndTime {
+    font-size: x-small;
+    color: var(--dark-gray);
+}
+
 .monthAnn, .timeAnn, .titleAnn, .descAnn {
     font-size: small;
 }
@@ -376,18 +393,27 @@ a.nav-link:hover{
         transform: scale(1.05);
     }
     .recruitmentForm{
-        margin-bottom: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 4rem 3rem;
+    }
+}
+@media (max-width: 576px) {
+    .recruitmentForm{
+        padding: 3rem 2rem;
+    }
+}
+@media (min-width: 768px) {
+    .recruitmentForm{
+        padding: 3.5rem 3rem;
     }
 }
 
 .form-label{
     font-size: smaller;
 }
-.recruitmentForm{
-    padding: 3.5rem 2.5rem;
-}
+
 
 /* SERMON */
 .sermonIcon{
@@ -395,10 +421,12 @@ a.nav-link:hover{
     width: 100px;
     height: 100px;
     border-radius: 5%;
+    cursor: pointer;
 }
 .sermonTitle{
     font-weight: 600;
     margin: 0;
+    cursor: pointer;
 }
 .sermonDescription{
     font-size: small;
