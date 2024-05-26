@@ -369,12 +369,11 @@ a.nav-link:hover{
     text-decoration: none;
     background-color: var(--primary-color);
     border: var(--bs-pagination-border-width) solid var(--page-border);
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: all 0;
 }
 .pagination {
-    --bs-pagination-disabled-bg: rgb(226, 226, 226);
-    --bs-pagination-disabled-border-color: rgb(226, 226, 226);
-    
+    --bs-pagination-disabled-bg: var(--primary-color);
+    --bs-pagination-disabled-border-color: var(--page-border);
 }
 
 /* ANNOUNCEMENT */
