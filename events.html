@@ -110,8 +110,8 @@
 					<!-- this will appear only in LARGE BREAKPOINT / Tablets and Mobile Phones -->
 					<button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas"
 						data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon web-icons"
-							style="background-image: url(icons/hamburger-menu-light.png);"></span>
+						<span class="navbar-toggler-icon inverted web-icons"
+							style="background-image: url(icons/hamburger-menu.png);"></span>
 					</button>
 					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
 						aria-labelledby="offcanvasNavbarLabel">
@@ -194,7 +194,7 @@
 					</div>
 
 					<div class="btn-group">
-						<img class="web-icons account-icon dropdown-toggle" src="icons/account-icon.png" width="45px" alt=""
+						<img class="web-icons account-icon dropdown-toggle me-2" src="icons/account-icon.png" width="35px" alt=""
 							data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
 						<ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-end">
 							<li><a href="myaccount.html" class="btn dropdown-item logout-text">My Account</a></li>
@@ -208,14 +208,14 @@
 
       <!-- START OF EVENTS -->
       <div class="p-0">
-        <!-- <div class="d-flex justify-content-between mx-4 mt-4">
+        <div class="d-flex justify-content-between mx-4 mt-4">
           <h5 class="body-title">Events</h5>
         </div>
-        <hr class="mx-4 mb-4 divider"> -->
-        <img class="fixed-btn shadow-sm" src="icons/dark-mode.icon.png" type="button" id="icon" alt="">
+        <hr class="mx-4 mb-4 divider">
+        <img class="fixed-btn shadow" src="icons/dark-mode.icon.png" type="button" id="icon" alt="">
         <div class="container-fluid">
           <!-- FIRST 1ST CAROUSEL -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-12 gx-0 mt-1">
               <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" data-bs-interval="3000">
@@ -239,9 +239,9 @@
                 </button>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <hr class="mx-4"> -->
-          <br>
+          <!-- <br> -->
           <!-- END OF 1ST ROW CAROUSEL -->
 
           <!-- START OF 2ND ROW -->
@@ -249,11 +249,15 @@
             <!-- START OF FIRST COLUMN -->
             <div class="col-12 col-lg-7 col-md-8 col-sm-12 mb-3">
               <div class="all-cards card border-0 shadow-sm px-4 pt-4 pb-2">
-                <div class="align-items-center justify-content-start d-flex">
-                  <img class="web-icons" src="icons/upcoming-events-icon.png" width="35px" alt="">
-                  <h5 class="m-0 ms-2 body-title">Upcoming Events</h5>
+                <div class="card all-cards2 border-0 shadow-sm">
+                  <div class="card-body">
+                    <div class="align-items-center justify-content-start d-flex">
+                      <img src="icons/upcoming-events-icon2.png" width="35px" alt="">
+                      <h5 class="m-0 ms-2 body-title">Upcoming Events</h5>
+                    </div>
+                  </div>
                 </div>
-                <hr class="mb-2 divider">
+                <!-- <hr class="mb-2 divider"> -->
 
                 <div class="card-body p-0" style="max-height: 100%;">
                   <!-- First Card of UPCOMING EVENTS -->
@@ -338,11 +342,16 @@
             <div class="col-12 col-lg-4 col-md-4 col-sm-12 mb-3">
               <div class="all-cards border-0 shadow-sm px-4 pt-4 pb-2 rounded-2" style="min-width: 250px; ">
                 <div class="card-body p-0" style="max-height: 1200px; overflow-y: auto;">
-                  <div class="align-items-center justify-content-start d-flex">
-                    <img class="web-icons" src="icons/past-events-icon.png" width="35px" alt="">
-                    <h5 class="m-0 ms-2 body-title">Past Events</h5>
+                  <div class="card bg-danger-subtle border-0 shadow-sm">
+                    <div class="card-body">
+                      <div class="align-items-center justify-content-start d-flex">
+                        <img src="icons/past-events-icon2.png" width="35px" alt="">
+                        <h5 class="m-0 ms-2">Past Events</h5>
+                      </div>
+                    </div>
                   </div>
-                  <hr class="mb-4 divider">
+
+                  <!-- <hr class="mb-4 divider"> -->
 
                   <!-- Cards -->
                   <div id="cardContainer">
