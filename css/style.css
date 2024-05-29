@@ -444,6 +444,10 @@ a.nav-link:hover{
     border-color: var(--tablehead-color);
 }
 
+.page-button{
+    font-size: 12px;
+}
+
 /* RECRUITMENT */
 .image-gallery {
     max-height: 85vh;
@@ -586,6 +590,9 @@ a.nav-link:hover{
 
 @media (max-width: 576px) {
     th, td {
+        font-size: 10px;
+    }
+    .page-button{
         font-size: 10px;
     }
 }
