@@ -24,12 +24,12 @@
     --page-border: #0E6EFD;
     --place-holder: #d5d5d5;
 }
-.sidebar-border{
-    border-right: 1px solid var(--hover-color);
-}
 #icon{
     width: 50px;
     cursor: pointer;
+}
+.sidebar-border{
+    border-right: 1px solid var(--hover-color);
 }
 .inverted{
     filter: invert(1);
@@ -537,6 +537,12 @@ a.nav-link:hover{
     object-fit: cover;
     border: solid 3px #d1d1d1;
 }
+@media (max-width: 768px) {
+    .myaccount-button{
+        width: 100%;
+    }
+}
+
 
 /* VISITORS LOG */
 .visitors-table {
