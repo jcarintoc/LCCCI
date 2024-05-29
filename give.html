@@ -17,7 +17,26 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+	<style>
+		#chart_div {
+			width: 90%;
+			height: 350px;
+		}
+		/* @media (min-width: 375px) {
+			#chart_div {
+			width: 90%;
+			height: 350px;
+		}
+		}
+		@media (max-width: 375px) {
+			#chart_div {
+			width: 90%;
+			height: 300px;
+		}
+		} */
+	</style>
 </head>
 
 <body>
@@ -105,13 +124,13 @@
 
 		<!-- START OF NAVBAR -->
 		<div class="flex-fill">
-			<nav class="fixed navbar-large navbar d-lg-none" style="box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);">
+			<nav class="fixed navbar-large navbar d-lg-none py-3 shadow-sm">
 				<div class="container-fluid">
 					<!-- this will appear only in LARGE BREAKPOINT / Tablets and Mobile Phones -->
 					<button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas"
 						data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon inverted web-icons"
-							style="background-image: url(icons/hamburger-menu.png);"></span>
+						<span class="navbar-toggler-icon web-icons"
+							style="background-image: url(icons/hamburger-user.png);"></span>
 					</button>
 					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
 						aria-labelledby="offcanvasNavbarLabel">
@@ -187,14 +206,14 @@
 							<img class="nav-logo" src="logo/LCCCI logo original.png" alt="">
 						</div>
 						<div class="col p-0">
-							<h5 class="text-resize m-0 d-none d-md-block" style="color: var(--third-color);">LCCCI: Centralized
+							<h5 class="m-0 d-none d-md-block" style="color: var(--third-color);">LCCCI: Centralized
 								Management System</h5>
-							<h5 class="text-resize m-0 d-md-none" style="color: var(--third-color);">LCCCI: CMS</h5>
+							<h5 class="m-0 d-md-none" style="color: var(--third-color);">LCCCI: CMS</h5>
 						</div>
 					</div>
 
 					<div class="btn-group">
-						<img class="web-icons account-icon dropdown-toggle me-2" src="icons/account-icon.png" width="35px" alt=""
+						<img class="web-icons account-icon dropdown-toggle me-2" src="icons/account-icon.png" width="40px" alt=""
 							data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
 						<ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-end">
 							<li><a href="myaccount.html" class="btn dropdown-item logout-text">My Account</a></li>
@@ -216,9 +235,22 @@
 				<hr class="divider">
 				<br>
 				<div class="container-fluid">
+					<!-- GOOGLE CHART -->
+					<div class="row mb-3">
+						<div class="col">
+							<div class="card shadow-sm border-0" style="width: 100%;">
+								<div class="card-body px-0 d-flex justify-content-center w-100">
+									<div id="chart_div"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- MODE OF DONATION -->
+				<div class="container-fluid">
 					<div class="row d-flex justify-content-center">
 						<!-- GCASH -->
-						<div class="col-md-5 col-12">
+						<div class="col-md-6 col-12">
 							<div class="card bg-transparent border-0">
 								<div class="card bg-primary border-0 mb-3 shadow-sm">
 									<div class="card-body">
@@ -249,7 +281,7 @@
 						</div>
 
 						<!-- BPI -->
-						<div class="col-md-5 col-12 mt-4 mt-md-0">
+						<div class="col-md-6 col-12 mt-4 mt-md-0">
 							<div class="card bg-transparent border-0">
 								<div class="card bg-danger border-0 mb-3 shadow-sm">
 									<div class="card-body">
@@ -286,6 +318,51 @@
 		</div>
 	</div>
 
+
+	<!-- GOOGLE CHART JAVASCRIPT -->
+	<script>
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawBasic);
+
+    function drawBasic() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Month');
+      data.addColumn('number', 'Donated');
+
+      data.addRows([
+        ['January', 450],
+        ['February', 500],
+        ['March', 330],
+        ['April', 490],
+        ['May', 400],
+        ['June', 600],
+        ['July', 778],
+        ['August', 350],
+        ['September', 200],
+        ['October', 480],
+        ['November', 800],
+        ['December', 1500],
+      ]);
+
+      var options = {
+        title: 'LCCCI Monthly Donation',
+        hAxis: {
+          
+        },
+        vAxis: {
+          title: 'Amount Donated'
+        },
+        // legend: { position: 'none' }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+
+    window.addEventListener('resize', drawBasic);
+  </script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
