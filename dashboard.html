@@ -17,6 +17,26 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+	<style>
+		#chart_div {
+			width: 90%;
+			height: 280px;
+		}
+		#piechart {
+			width: 90%; 
+			height: 280px;
+		}
+		@media (max-width: 576px) {
+			#chart_div {
+			height: 180px;
+		}
+			#piechart {
+				height: 180px;
+			}
+		}
+	</style>
 
 </head>
 
@@ -224,9 +244,9 @@
 				<hr class="divider">
 				<br>
 				<div class="container-fluid">
-					<div class="row">
+					<div class="row gx-3">
 						<div class="col-12">
-							<div class="card mb-2 bg-success d-flex flex-row align-items-center shadow-sm border-0"
+							<div class="card mb-3 bg-success d-flex flex-row align-items-center shadow-sm border-0"
 								style="max-width: 100%;">
 								<div class="card-body ms-3 mt-2 text-light">
 									<h5>Hello, User!</h5>
@@ -237,12 +257,28 @@
 								</div>
 							</div>
 						</div>
+						<!-- BAR GRAPH -->
+						<div class="col-12 col-md-8">
+							<div class="all-cards card mb-3 shadow-sm border-0">
+								<div class="card-body px-0 d-flex justify-content-center">
+									<div id="chart_div"></div>
+								</div>
+							</div>
+						</div>
+						<!-- PIE CHART -->
+						<div class="col-12 col-md-4">
+							<div class="all-cards card mb-3 shadow-sm border-0">
+								<div class="card-body px-0 d-flex justify-content-center align-items-center">
+									<div id="piechart"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<!-- 2nd ROW -->
-					<div class="row gx-2">
+					<div class="row gx-3">
 						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-							<div class="all-cards card mb-2 d-flex flex-row align-items-center shadow-sm border-0 px-4" style="max-width: 100%;">
+							<div class="all-cards card mb-3 d-flex flex-row align-items-center shadow-sm border-0 px-4 px-sm-5 py-1 py-sm-3" style="max-width: 100%;">
 								<div class="card-body px-0">
 									<p class="card-subtitle">Total Members</p>
 									<h4 class="m-0" style="color: var(--third-color)">0</h4>
@@ -254,7 +290,7 @@
 						</div>
 
 						<div class="col-lg-4 col-sm-6">
-							<div class="all-cards card mb-2 d-flex flex-row align-items-center shadow-sm border-0 px-4" style="max-width: 100%;">
+							<div class="all-cards card mb-3 d-flex flex-row align-items-center shadow-sm border-0 px-4 px-sm-5 py-1 py-sm-3" style="max-width: 100%;">
 								<div class="card-body px-0">
 									<p class="card-subtitle">Total Male</p>
 									<h4 class="m-0" style="color: var(--third-color)">0</h4>
@@ -266,7 +302,7 @@
 						</div>
 
 						<div class="col-lg-4 col-sm-6">
-							<div class="all-cards card mb-2 d-flex flex-row align-items-center shadow-sm border-0 px-4" style="max-width: 100%;">
+							<div class="all-cards card mb-3 d-flex flex-row align-items-center shadow-sm border-0 px-4 px-sm-5 py-1 py-sm-3" style="max-width: 100%;">
 								<div class="card-body px-0">
 									<p class="card-subtitle">Total Female</p>
 									<h4 class="m-0" style="color: var(--third-color)">0</h4>
@@ -278,9 +314,9 @@
 						</div>
 					</div>
 					<!-- 3nd ROW -->
-					<div class="row gx-2">
+					<div class="row gx-3">
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<div class="all-cards card mb-2 d-flex flex-row align-items-center shadow-sm border-0 px-4" style="max-width: 100%;">
+							<div class="all-cards card mb-3 d-flex flex-row align-items-center shadow-sm border-0 px-4 px-sm-5 py-1 py-sm-3" style="max-width: 100%;">
 								<div class="card-body px-0">
 									<p class="card-subtitle">Announcements</p>
 									<h4 class="m-0" style="color: var(--third-color)">0</h4>
@@ -292,7 +328,7 @@
 						</div>
 
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<div class="all-cards card mb-2 d-flex flex-row align-items-center shadow-sm border-0 px-4" style="max-width: 100%;">
+							<div class="all-cards card mb-3 d-flex flex-row align-items-center shadow-sm border-0 px-4 px-sm-5 py-1 py-sm-3" style="max-width: 100%;">
 								<div class="card-body px-0">
 									<p class="card-subtitle">Events</p>
 									<h4 class="m-0" style="color: var(--third-color)">0</h4>
@@ -304,9 +340,9 @@
 						</div>
 					</div>
 					<!-- 4th ROW -->
-					<div class="row gx-2">
+					<div class="row gx-3">
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<div class="all-cards card mb-2 d-flex flex-row align-items-center shadow-sm border-0 px-4" style="max-width: 100%;">
+							<div class="all-cards card mb-3 d-flex flex-row align-items-center shadow-sm border-0 px-4 px-sm-5 py-1 py-sm-3" style="max-width: 100%;">
 								<div class="card-body px-0">
 									<p class="card-subtitle">Visitors</p>
 									<h4 class="m-0" style="color: var(--third-color)">0</h4>
@@ -318,7 +354,7 @@
 						</div>
 
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<div class="all-cards card mb-2 d-flex flex-row align-items-center shadow-sm border-0 px-4" style="max-width: 100%;">
+							<div class="all-cards card mb-3 d-flex flex-row align-items-center shadow-sm border-0 px-4 px-sm-5 py-1 py-sm-3" style="max-width: 100%;">
 								<div class="card-body px-0">
 									<p class="card-subtitle">Give</p>
 									<h4 class="m-0" style="color: var(--third-color)">0</h4>
@@ -333,8 +369,6 @@
 				<!-- END OF DASHBOARD  -->
 
 			</div>
-
-
 		</div>
 	</div>
 
@@ -345,6 +379,7 @@
 		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
 		crossorigin="anonymous"></script>
 	<script src="javascript/darkmode.js"></script>
+	<script src="javascript/chart.js"></script>
 	<!-- <script src="/bootstrap-5.3.3-dist/js/bootstrap.js"></script> -->
 </body>
 
