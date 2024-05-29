@@ -242,27 +242,7 @@ li.nav-item:hover{
     overflow-y: auto;
 }
 
-
 /* TEXT */
-@media (max-width: 768px) {
-    .text-resize {
-        font-size: 1rem;
-    }
-    .account-button {
-        font-size: 1rem;
-    }
-    .myaccount-button {
-        width: 100%;
-    }
-}
-@media (max-width: 576px) {
-    .text-resize {
-        font-size: 0.9rem;
-    }
-    .account-button {
-        font-size: 0.9rem;
-    }
-}
 
 .sidebar-navigation{
     color: rgb(120, 120, 120);
@@ -287,6 +267,7 @@ a.nav-link:hover{
 .form-control{
     font-size: 0.8rem;
 }
+
 
 /* DASHBOARD */
 
@@ -377,6 +358,18 @@ a.nav-link:hover{
 }
 
 /* ANNOUNCEMENT */
+.announcement-card{
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.announcement-card:hover {
+    opacity: 0.9;
+}
+.announcement-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 .latest-announcement-title {
     font-size: large;
     font-weight: bold;
@@ -385,8 +378,30 @@ a.nav-link:hover{
     font-size: small;
 }
 .latest-announcement-dateAndTime {
+    margin: 0;
     font-size: x-small;
     color: var(--dark-gray);
+}
+@media (max-width: 768px) {
+    .announcement-img{
+        width: 100%;
+        height: 180px;
+    }
+}
+@media (max-width: 576px) {
+    .latest-announcement-title {
+        font-size: 8px;
+    }
+    .latest-announcement-body {
+        font-size: 6px;
+    }
+    .latest-announcement-dateAndTime {
+        font-size: 6px;
+    }
+    .announcement-img{
+        width: 100%;
+        height: 100px;
+    }
 }
 
 .monthAnn, .timeAnn, .titleAnn, .descAnn {
