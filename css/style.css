@@ -399,13 +399,14 @@ a.nav-link:hover{
 }
 @media (max-width: 576px) {
     .latest-announcement-title {
-        font-size: 8px;
+        font-size: 10px;
     }
     .latest-announcement-body {
-        font-size: 6px;
+        font-size: 8px;
+        margin-bottom: 4px;
     }
     .latest-announcement-dateAndTime {
-        font-size: 6px;
+        font-size: 8px;
     }
     .announcement-img{
         width: 100%;
