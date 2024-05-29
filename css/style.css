@@ -520,16 +520,33 @@ a.nav-link:hover{
 }
 .sermonButton{
     transition: 0.25s;
+    width: 60px;
+    border: none;
+    
 }
 .sermonButton:hover{
     opacity: 0.7;
 }
-
-
+.sermon-button-group{
+    display: flex;
+}
 @media (max-width: 768px) {
     .sermonIcon{
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
+    }
+    .sermonTitle{
+        font-size: small;
+    }
+    .sermonDescription{
+        font-size: x-small;
+    }
+    .sermon-button-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .sermonButton{
+        width: 50px;
     }
 }
 
