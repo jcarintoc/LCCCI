@@ -648,3 +648,32 @@ a.nav-link:hover{
         font-size: 12px;
     }
 }
+
+
+/* GIVE */
+.donators-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.donators-table th {
+    background-color: var(--tablehead-color);
+    text-align: start;
+    padding: 1rem 1rem;
+    color: var(--third-color);
+}
+.donators-table td {
+    border-color: var(--tablehead-color);
+    border-width: 1.5px;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    text-align: start;
+    padding: 1.5rem 1rem;
+    color: var(--third-color);
+}
+
+@media (max-width: 576px) {
+    th, td {
+        font-size: 10px;
+    }
+}
