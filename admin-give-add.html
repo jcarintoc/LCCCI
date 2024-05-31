@@ -303,7 +303,7 @@
 										<div class="col-12 col-md-6">
 											<div class="form-floating mb-3">
 												<input type="text" class="form-control form-control-sm" id="floatingInput" placeholder="Username">
-												<label for="floatingInput">Member Name</label>
+												<label for="floatingInput">Name</label>
 											</div>
 										</div>
 										<div class="col-12 col-md-6">
@@ -323,8 +323,8 @@
 										</div>
 										<div class="col-12 col-md-6">
 											<div class="form-floating mb-3">
-												<input type="text" class="form-control form-control-sm" id="floatingInput" placeholder="Username">
-												<label for="floatingInput">Transaction Method</label>
+												<input type="date" name="trip-start" value="YYYY-DD-MM" class="form-control form-control-sm" id="floatingInput" placeholder="Username">
+												<label for="floatingInput">Date</label>
 											</div>
 										</div>
 									</div>
@@ -336,17 +336,14 @@
 												<label for="floatingInput">Amount</label>
 											</div>
 										</div>
-										<div class="col-12 col-md-6">
-											<div class="form-floating mb-3">
-												<input type="text" class="form-control form-control-sm" id="floatingInput" placeholder="Username">
-												<label for="floatingInput">Date</label>
-											</div>
-										</div>
-										<div class="col-12 col-md-6">
-											<div class="form-floating mb-3">
-												<input type="text" class="form-control form-control-sm" id="floatingInput" placeholder="Username">
-												<label for="floatingInput">Time</label>
-											</div>
+										<div class="col-12 col-md-6 form-floating mb-3">
+											<select class="form-select" id="floatingSelect" >
+												<option selected>Select</option>
+												<option value="1">Cash</option>
+												<option value="2">Gcash</option>
+												<option value="2">Bank</option>
+											</select>
+											<label style="margin-left: 0.8rem ;" for="floatingSelect">Type</label>
 										</div>
 									</div>
 
