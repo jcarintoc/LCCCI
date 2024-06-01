@@ -316,7 +316,21 @@
 											<label for="formFile" class="form-label">Add image for event</label>
 											<input class="form-control rounded-0" type="file" id="formFile">
 										</div>
-										<button type="submit" class="btn btn-primary">Submit</button>
+										<button type="submit" class="btn btn-primary" id="liveToastBtn">Submit</button>
+										<!-- TOAST -->
+										<div class="toast-container position-fixed bottom-0 end-0 p-3">
+											<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+												<div class="toast-header bg-success text-white">
+													<!-- <img src="..." class="rounded me-2" alt="..."> -->
+													<strong class="me-auto">Events</strong>
+													<small>just now</small>
+													<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="filter: invert(1);"></button>
+												</div>
+												<div class="toast-body">
+													Events added successfully.
+												</div>
+											</div>
+										</div>
 									</form>
 								</div>
 							</div>
@@ -341,6 +355,7 @@
 		crossorigin="anonymous"></script>
 	<script src="https://cdn.tiny.cloud/1/<YOUR_API_KEY>/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 	<script src="javascript/textEditor.js"></script>
+	<script src="javascript/toast.js"></script>
 	<!-- <script src="/bootstrap-5.3.3-dist/js/bootstrap.js"></script> -->
 </body>
 
