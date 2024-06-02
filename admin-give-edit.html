@@ -296,25 +296,31 @@
 						<div class="col-12">
 							<div class="card border-0 rounded-0 shadow-sm">
 								<div class="card bg-transparent p-3 border-top-0 border-start-0 border-end-0 rounded-0">
-									<h6 class="m-0">Edit Donation</h6>
+									<h6 class="m-0">Add Donation</h6>
 								</div>
 								<div class="card-body p-4 m-0 m-md-2">
                   <div class="row">
-										<div class="col-12 col-md-6">
+										<!-- <div class="col-12 col-md-6">
 											<div class="form-floating mb-3">
 												<input type="text" class="form-control form-control-sm" id="floatingInput" placeholder="Username">
 												<label for="floatingInput">Name</label>
 											</div>
-										</div>
+										</div> -->
 										<div class="col-12 col-md-6">
 											<div class="form-floating mb-3">
 												<input type="text" class="form-control form-control-sm" id="floatingInput" placeholder="Username">
 												<label for="floatingInput">Contact Number</label>
 											</div>
 										</div>
+										<div class="col-12 col-md-6">
+											<div class="form-floating mb-3">
+												<input type="date" name="trip-start" value="YYYY-DD-MM" class="form-control form-control-sm" id="floatingInput" placeholder="Username">
+												<label for="floatingInput">Date</label>
+											</div>
+										</div>
 									</div>
 
-                  <div class="row">
+                  <!-- <div class="row">
 										<div class="col-12 col-md-6">
 											<div class="form-floating mb-3">
 												<input type="text" class="form-control form-control-sm" id="floatingInput" placeholder="Username">
@@ -327,7 +333,7 @@
 												<label for="floatingInput">Date</label>
 											</div>
 										</div>
-									</div>
+									</div> -->
 
                   <div class="row">
 										<div class="col-12 col-md-6">
@@ -347,7 +353,7 @@
 										</div>
 									</div>
 
-                  <button class="btn btn-primary" style="padding: 0.5rem 1rem;" id="liveToastBtn">Update</button>
+                  <button class="btn btn-primary" style="padding: 0.5rem 1rem;" id="liveToastBtn">Submit</button>
 									<!-- TOAST -->
 									<div class="toast-container position-fixed bottom-0 end-0 p-3">
 										<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -358,7 +364,7 @@
 												<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="filter: invert(1);"></button>
 											</div>
 											<div class="toast-body">
-												Donation updated successfully.
+												Donation added successfully.
 											</div>
 										</div>
 									</div>
