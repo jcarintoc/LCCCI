@@ -366,6 +366,91 @@ a.nav-link:hover{
     --bs-pagination-disabled-border-color: var(--page-border);
 }
 
+.main-card p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--third-color);
+  }
+  
+  .main-card p.small {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .main-card p.date-and-time {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--place-holder);
+  }
+  .main-card p.event-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--third-color);
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #7634FB;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card1 {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    padding: 32px 24px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #7634FB;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(40);
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgb(255, 255, 255);
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.5s ease-out;
+    color: #fff;
+  }
+  
+
 /* ANNOUNCEMENT */
 .announcement-card{
     cursor: pointer;
@@ -428,6 +513,7 @@ a.nav-link:hover{
 .announcementTitle{
     width: 50%;
     text-align: center;
+    cursor: pointer;
 }
 .table th {
     background-color: var(--tablehead-color);
